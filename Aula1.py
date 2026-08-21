@@ -1,5 +1,10 @@
 nome = str(input("Digite seu nome: "))
 idade = int(input("Digite sua idade: "))
 
-print("Olá, " + nome + "! Você tem " + str(idade) + " anos.")
-print("Obrigado por participar da aula!")
+if idade < 18:
+    print("Você é menor de idade.")
+else:
+    print("Você é maior de idade.")
+
+print(F"Olá, {nome}! Você tem {idade} anos.")
+print(f"Obrigado por participar da aula!")
